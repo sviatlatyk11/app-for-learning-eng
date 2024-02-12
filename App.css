@@ -1,0 +1,97 @@
+
+.App-header {
+  /* Set the background color to a dark grayish-blue */
+  background-color: #282c34;
+  /* Define the font size */
+  font-size: calc(10px + 2vmin);
+  /* Set the text color to black */
+  color: black;
+}
+
+
+.results-container {
+  color: white;
+  padding: 20px;
+}
+
+.input-container {
+  /* Set the background color to transparent */
+  background-color: transparent;
+  /* Use flex layout with content centered both horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Add 10 pixels of padding on all sides */
+  padding: 10px;
+}
+
+.input_tag {
+  /* Set the width, height, font size to 25px, padding, and margin for input elements */
+  width: 350px;
+  height: 50px;
+  font-size: 25px;
+  padding: 15px;
+  margin: 5px;
+}
+
+
+.btn {
+  /* Set the width, height, font size, padding, and margin for buttons */
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+  padding: 2px;
+  margin: 5px;
+}
+
+.table {
+  font-size: 20px;
+}
+
+.navbar-nav .nav-item {
+  margin: 20px;
+  font-size: 40px; 
+  color: #000;
+  text-decoration: none;
+
+}
+
+
+.dict-nav-icon {
+  font-size: 55px;
+  padding-top: 15px;
+}
+
+
+
+/* Style for the active link */
+.nav-item.active {
+  color: #007bff; /* Change this to your desired highlight color */
+  text-decoration: none;
+}
+
+
+.nav-item:hover {
+  background-color: white; /* Change the background color on hover */
+  color: red; /* Change the text color on hover */
+}
+
+.main {
+  padding: 20px;
+}
+
+
+
+
+.quiz-box {
+  width: 450px; /* Adjust the width as needed within the range */
+  height: 50; /* Adjust the height as needed within the range */
+  background-color: #3498db; /* Change the background color to your preference */
+  border: 2px solid #2980b9; /* Add a border with your preferred color */
+  border-radius: 10px; /* Add rounded corners if desired */
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}

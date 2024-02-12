@@ -1,0 +1,13 @@
+
+
+.first-story-box, .second-story-box, .third-story-box {
+    width: 450px; /* Adjust the width as needed within the range */
+    height: 430px; /* Adjust the height as needed within the range */
+    background-color: #3498db; /* Change the background color*/
+    border: 2px solid #2980b9; /* Add a border  */
+    border-radius: 10px; /* Add rounded corners */
+    margin: 20px;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+  }

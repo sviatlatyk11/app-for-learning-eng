@@ -1,0 +1,126 @@
+
+
+.box {
+    width: 450px; /* Adjust the width as needed within the range */
+    height: 150px; /* Adjust the height as needed within the range */
+    background-color: #3498db; /* Change the background color*/
+    border: 2px solid #2980b9; /* Add a border  */
+    border-radius: 10px; /* Add rounded corners */
+    margin-left: 140px;
+    margin-top: 40px;
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+
+
+
+h1 {
+    padding-left: 20px;
+}
+
+/* Styles for a container that displays a word */
+.display-word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh; /* Set the height to 70% of the viewport height */
+}
+
+/* Styles for the container holding the word */
+.word-container {
+  text-align: center;
+  border: 1px solid #ddd; /* Add a 1px solid border with a light gray color */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  border: 3px solid; /* Add a 3px solid border (Note: This line appears twice, you may want to remove one of them) */
+  height: 300px; /* Set a fixed height for the container */
+  width: 200px; /* Set a fixed width for the container */
+  margin-right: 500px; /* Add a right margin of 500px */
+  display: flex; /* Use flex display for flexbox properties */
+  flex-direction: column; /* Arrange the child elements in a column */
+  align-items: center; /* Center the child elements horizontally */
+  justify-content: center; /* Center the child elements vertically */
+  cursor: pointer; /* Add cursor pointer for click interaction */
+  transition: transform 0.3s; /* Add smooth transition for the transform effect */
+  /* Note: It's usually better to avoid redundant border declarations (border: 1px solid #ddd; and border: 3px solid;) */
+}
+
+/* Styles for the next button */
+.next-button {
+  margin-top: 20px; /* Add top margin of 20px */
+  margin-left: 10px; /* Add left margin of 10px */
+  padding: 10px 20px; /* Set padding for the button */
+  font-size: 2rem; /* Set font size to 2rem */
+  background-color: #4caf50; /* Set background color to a green shade */
+  color: white; /* Set text color to white */
+  border: 2px solid black; /* Add a black solid border */
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer for click interaction */
+  transition: background-color 0.3s; /* Add smooth transition for background color change */
+  width: 102px; /* Set a fixed width for the button */
+}
+
+/* Styles for the previous button */
+.prev-button {
+  margin-top: 20px; /* Add top margin of 20px */
+  margin-left: 5px; /* Add left margin of 5px */
+  padding: 10px 20px; /* Set padding for the button */
+  font-size: 2rem; /* Set font size to 2rem */
+  background-color: #2196f3; /* Set background color to a blue shade */
+  color: white; /* Set text color to white */
+  border: 2px solid black; /* Add a black solid border */
+  border-radius: 4px; /* Add border-radius for rounded corners */
+  cursor: pointer; /* Add cursor pointer for click interaction */
+  transition: background-color 0.3s; /* Add smooth transition for background color change */
+  width: 80px; /* Set a fixed width for the button */
+}
+
+/* Styles for the hover effect on the previous button */
+.prev-button:hover {
+  background-color: #0b7dda; /* Change background color on hover */
+}
+
+/* Styles for the next button icon */
+.next-icon {
+  font-size: 2rem; /* Set font size to 2rem */
+}
+
+/* Styles for the text inside the next button */
+.next-button-text {
+  font-size: 1rem; /* Set font size to 1rem */
+}
+
+.word-image {
+  max-width: 100%; /* Ensure the image does not exceed its container width */
+  max-height: 150px; /* Set a maximum height for the image */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 10px 0; /* Add some margin for spacing */
+  border: 1px solid #ddd; /* Add a border for better visibility */
+  border-radius: 5px;
+}
+
+
+.word-container.clicked {
+  transform: rotateY(180deg); /* Rotate the container 180 degrees on the Y-axis */
+}
+
+.word-container.clicked .word {
+  transform: rotateY(180deg); /* Rotate the text 180 degrees on the Y-axis when the container is clicked */
+}
+
+
+.word-container.clicked .word-image {
+  transform: rotateY(180deg); /* Rotate the text 180 degrees on the Y-axis when the container is clicked */
+}
+
+.completion-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+.display {
+  margin-left: 20px;
+}

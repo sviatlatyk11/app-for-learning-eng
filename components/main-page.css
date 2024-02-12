@@ -1,0 +1,99 @@
+/* Reset default margin, padding, and font for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Styles for the container holding the entire page */
+.container {
+    position: relative; /* Establish positioning context */
+    width: 100%;
+    height: 100vh;
+    background-image: url(main-image6.png); /* Background image */
+    background-position: center;
+    background-size: cover;
+}
+
+/* Overlay to add opacity to the background image */
+.overlay {
+    position: absolute; /* Position overlay relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent black overlay */
+}
+
+/* Styles for the row containing the cards */
+.row {
+    display: flex; /* Use flexbox layout */
+    height: 88%; /* 88% of the container height */
+    align-items: center; /* Vertically center items */
+    justify-content: flex-start; /* Align items to the start of the row */
+}
+
+/* Styles for the columns within the row */
+.col {
+    flex-basis: 50%; /* Take up half of the available space */
+    text-align: right; /* Align text content to the right */
+}
+
+/* Styles for individual cards */
+.card {
+    width: 220px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    border-color: bisque;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 55px;
+    margin-top: 65px;
+    margin-right: 70px;
+    background-position: center;
+    position: relative; /* Establish positioning context */
+    transition: transform 0.5s; /* Smooth transition on hover */
+}
+
+/* Styles for the heading within each card */
+.card h5 {
+    position: absolute; /* Position the text absolutely */
+    top: 15%; /* Adjust top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center vertically */
+    color: white;
+    text-align: center; /* Center text horizontally */
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Background images for different cards */
+.card1 {
+    background-image: url(video.png);
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url(vocabulary.png);
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url(reading.jpeg);
+    background-size: cover;
+}
+
+.card4 {
+    background-image: url(word-search.png);
+    background-size: contain;
+}
+
+/* Hover effect on cards */
+.card:hover {
+    transform: translateY(-10px); /* Move card slightly upwards on hover */
+}
